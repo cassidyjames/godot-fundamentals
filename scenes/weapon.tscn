@@ -1,0 +1,17 @@
+[gd_scene load_steps=4 format=3 uid="uid://dql0hrjar0kmq"]
+
+[ext_resource type="Script" path="res://scenes/weapon.gd" id="1_vm7t2"]
+[ext_resource type="PackedScene" uid="uid://c8m73q2ly6k6a" path="res://scenes/bullet.tscn" id="2_c1fdj"]
+[ext_resource type="Texture2D" uid="uid://bn0i3nub5w5v" path="res://assets/sprites/weapon.png" id="3_jn8jy"]
+
+[node name="Weapon" type="Node2D"]
+script = ExtResource("1_vm7t2")
+BULLET_SCENE = ExtResource("2_c1fdj")
+
+[node name="WeaponSprite" type="Sprite2D" parent="."]
+texture = ExtResource("3_jn8jy")
+offset = Vector2(12, 0)
+
+[node name="ReloadTimer" type="Timer" parent="."]
+
+[connection signal="timeout" from="ReloadTimer" to="." method="_on_reload_timer_timeout"]
