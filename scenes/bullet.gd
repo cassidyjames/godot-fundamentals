@@ -1,4 +1,5 @@
 extends Area2D
+class_name Bullet
 
 const SPEED = 500
 

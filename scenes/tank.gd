@@ -1,4 +1,5 @@
 extends CharacterBody2D
+class_name Tank
 
 const SPEED = 64.0
 const TURN_SPEED = 2

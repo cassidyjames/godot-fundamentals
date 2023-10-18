@@ -9,6 +9,8 @@ size = Vector2(3, 3)
 size = Vector2(3, 3)
 
 [node name="Bullet" type="Area2D"]
+collision_layer = 16
+collision_mask = 44
 script = ExtResource("1_cyuxk")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
