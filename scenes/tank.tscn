@@ -2,7 +2,7 @@
 
 [ext_resource type="Script" path="res://scenes/tank.gd" id="1_51h5g"]
 [ext_resource type="PackedScene" uid="uid://dql0hrjar0kmq" path="res://scenes/weapon.tscn" id="2_g1063"]
-[ext_resource type="Texture2D" uid="uid://d1ofeotkk0mmi" path="res://assets/sprites/tankBody_blue_outline_frames.png" id="2_vvfso"]
+[ext_resource type="Texture2D" uid="uid://v5plat3ktmp8" path="res://assets/sprites/body_anim.png" id="2_vr1df"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_ebrh0"]
 size = Vector2(39, 38)
@@ -65,7 +65,7 @@ script = ExtResource("1_51h5g")
 weapon = NodePath("Weapon")
 
 [node name="BodySprite" type="Sprite2D" parent="."]
-texture = ExtResource("2_vvfso")
+texture = ExtResource("2_vr1df")
 hframes = 2
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
